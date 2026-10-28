@@ -1,0 +1,30 @@
+package com.stockmanagement.stockmanagement.bana.dto;
+
+
+
+import com.stockmanagement.stockmanagement.common.enums.Status;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public record BanaResponse(
+
+        String banaCode,
+
+        String banaName,
+
+        LocalDate dateOfJoin,
+
+        Status status,
+
+        LocalDateTime createdAt,
+
+        LocalDateTime updatedAt,
+
+        Long version,
+
+        boolean deleted,
+
+        LocalDateTime deletedAt
+) {
+}
